@@ -41,7 +41,19 @@ $(function() {
         // append clear to make the well works
         pool.append('<div class="clear"></div>');
     }
+
     initializePool();
+
+    function shuffle(){
+        for(i = 1;i <= 100; ++i){
+            var x = Math.floor(Math.random() * i) % division.length;
+            var y = Math.floor(Math.random() * (i + 1)) % division.length;
+            var temp = division[x];
+            division[x] = division[y];
+            division[y] = temp;
+        }
+        initializePool();
+    }
 
     function reorderDivisionItem(ui) {
         // reorder the numbering
@@ -63,8 +75,7 @@ $(function() {
         });
     }
     reorderDivisionItem();
-
-
+    
     $('.division-pool').sortable({
         cursor: 'move',
         items: '.division-item',
@@ -173,6 +184,9 @@ $(function() {
         ]
     };
 
+
+    
+
     $('#real-submit-button').click(function() {
         // generate form link
         var url = "//docs.google.com/forms/d/" + formKey + "/formResponse";
@@ -191,6 +205,7 @@ $(function() {
         $('.division-item').each(function(i, e) {
             form.append('<input type="text" name="' + formEntries.division[i] + '" value="' + $(e).data('division') + '">');
         });
+
 
         // reasons
         for (i = 1; i <= 3; ++i) {
