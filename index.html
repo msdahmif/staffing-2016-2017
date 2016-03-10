@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Staffing HMIF 2016/2017</title>
+
+    <link rel="shorcut icon" href="favicon.ico">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/staffing.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1 col-xs-12">
+
+            <div class="text-center">
+            <h1>Staffing HMIF 2016/2017</h1>
+            <p>Staffing has never been <em>easier</em>.</p>
+            </div>
+
+            <hr>
+
+            <h3>Identitas</h3>
+            <p>Kenalkan dirimu!</p>
+
+            <div class="row">
+                <div class="form-group col-xs-12 col-md-4">
+                    <label class="" for="nim">NIM Jurusan</label>
+                    <input class="form-control" type="text" name="nim" id="nim" required>
+                    <small class="error-validation">Field ini harus diisi</small>
+                </div>
+                <div class="form-group col-xs-12 col-md-4">
+                    <label class="" for="nama">Nama</label>
+                    <input class="form-control" type="text" name="nama" id="nama" required>
+                    <small class="error-validation">Field ini harus diisi</small>
+                </div>
+                <div class="form-group col-xs-12 col-md-4">
+                    <label class="" for="telepon">Nomor Telepon</label>
+                    <input class="form-control" type="text" name="telepon" id="telepon" required>
+                    <small class="error-validation">Field ini harus diisi</small>
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Pilihan Divisi</h3>
+            <p>Urutkan semua divisi di bawah ini. Nomor 1 adalah divisi yang paling kamu minati. <em>Drag and drop</em> ke posisi yang kamu inginkan!</p>
+            <p>Bingung? Pastikan kamu sudah membaca <a target="_blank" href="#">booklet divisi</a> sebelum menentukan pilihan.</p>
+
+            <div class="container-fluid">
+                <div class="sortable sortable-well division-pool">
+                </div>
+            </div>
+
+            <hr>
+
+            <h3>Alasan</h3>
+            <p>Apa yang membuatmu memilih <span class="division-1"></span>, <span class="division-2"></span>, dan <span class="division-3"></span>?</p>
+
+            <div class="form-group">
+                <label class="" for="reason1">Alasan masuk <strong class="division-1"></strong>?</label>
+                <textarea class="form-control" name="reason1" id="reason1" cols="30" rows="5" required></textarea>
+                <small class="error-validation">Field ini harus diisi</small>
+            </div>
+            <div class="form-group">
+                <label class="" for="reason2">Alasan masuk <strong class="division-2"></strong>?</label>
+                <textarea class="form-control" name="reason2" id="reason2" cols="30" rows="5" required></textarea>
+                <small class="error-validation">Field ini harus diisi</small>
+            </div>
+            <div class="form-group">
+                <label class="" for="reason3">Alasan masuk <strong class="division-3"></strong>?</label>
+                <textarea class="form-control" name="reason3" id="reason3" cols="30" rows="5" required></textarea>
+                <small class="error-validation">Field ini harus diisi</small>
+            </div>
+
+            <hr>
+
+            <div class="form-group">
+                <button class="btn btn-default submit-button">Kirim!</button>
+            </div>
+
+            <div class="modal fade" id="review-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h4 class="modal-title">Apakah kamu yakin data yang dimasukkan sudah benar?</h4>
+                            <h5><strong>NIM / Nama / Telepon:</strong></h5>
+                            <div class="well" id="nim-nama-review"></div>
+
+                            <h5><strong>Pilihan divisi:</strong></h5>
+                            <div class="well" id="division-review"></div>
+
+                            <h5>Alasan masuk <strong class="division-1"></strong>:</h5>
+                            <div class="well" id="reason1-review"></div>
+
+                            <h5>Alasan masuk <strong class="division-2"></strong>:</h5>
+                            <div class="well" id="reason2-review"></div>
+
+                            <h5>Alasan masuk <strong class="division-3"></strong>:</h5>
+                            <div class="well" id="reason3-review"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <!-- <div class="info small">Kamu akan diminta untuk masuk ke akun Google setelah ini. Pilihlah akun std.stei.itb.ac.id.</div> -->
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+                            <button type="button" class="btn btn-primary" id="real-submit-button">Kirim!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="col-md-10 col-md-offset-1 col-xs-12">
+            <small><strong>Staffing</strong>: Part of Aksata Project 2.0</small><br>
+            <small>Divisi Manajemen Sumber Daya Anggota HMIF ITB 2016/2017</small>
+        </div>
+    </div>
+</footer>
+
+<!-- hidden form -->
+<form name="main-form" id="main-form" method="get" style="display: none"></form>
+
+<!-- script references -->
+<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery-ui.sortable.min.js"></script>
+<!-- Enable sortable on touch devices -->
+<script src="assets/js/jquery-ui.touch-punch.min.js"></script>
+<script type="text/javascript" src="assets/js/staffing.js"></script>
+<script type="text/javascript" src="assets/js/nim-autocomplete.js"></script>
+</body>
+
+</html>
