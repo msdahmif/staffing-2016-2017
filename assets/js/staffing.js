@@ -29,6 +29,7 @@ $(function() {
                 + '<div class="panel-heading"><span></span></div>'
             + '</div>'
         + '</div>';
+    var isShuffled = false;
 
     function initializePool() {
         var pool = $('.division-pool');
@@ -43,7 +44,7 @@ $(function() {
     }
 
     initializePool();
-
+    
     function shuffle(){
         for(i = 1;i <= 100; ++i){
             var x = Math.floor(Math.random() * i) % division.length;
@@ -53,7 +54,13 @@ $(function() {
             division[y] = temp;
         }
         initializePool();
+        reorderDivisionItem();
+        isShuffled = true;
     }
+
+    // initially, shuffle the options
+    shuffle();
+    $('#shuffle').click(shuffle);
 
     function reorderDivisionItem(ui) {
         // reorder the numbering
@@ -82,6 +89,7 @@ $(function() {
         opacity: 0.8,
         update: function (event, ui) {
             reorderDivisionItem();
+            isShuffled = false;
         },
         sort: function (event, ui) {
             reorderDivisionItem(ui);
@@ -181,7 +189,8 @@ $(function() {
             "entry.278632534",
             "entry.661248390",
             "entry.697588095"
-        ]
+        ],
+        shuffled:"entry.489806969"
     };
 
 
@@ -206,11 +215,14 @@ $(function() {
             form.append('<input type="text" name="' + formEntries.division[i] + '" value="' + $(e).data('division') + '">');
         });
 
-
         // reasons
         for (i = 1; i <= 3; ++i) {
             form.append('<input type="text" name="' + formEntries.reason[i-1] + '" value="' + $('#reason' + i).val() + '">');
         }
+
+        // shuffled/not?
+        form.append('<input type="text" name="' + formEntries.shuffled + '" value="' + (isShuffled ? "ya" : "tidak") + '">');
+
         form.submit();
     });
 });
