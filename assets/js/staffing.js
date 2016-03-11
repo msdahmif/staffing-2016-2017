@@ -213,7 +213,8 @@ $(function() {
         form.append('<input type="text" name="' + formEntries.nim + '" value="' + $('#nim').val() + '">');
         form.append('<input type="text" name="' + formEntries.nama + '" value="' + $('#nama').val() + '">');
         form.append('<input type="text" name="' + formEntries.telepon + '" value="' + $('#telepon').val() + '">');
-
+        form.append('<input type="text" name="' + formEntries.idline + '" value="' + $('#idline').val() + '">');
+        
         // division orders
         $('.division-item').each(function(i, e) {
             form.append('<input type="text" name="' + formEntries.division[i] + '" value="' + $(e).data('division') + '">');
