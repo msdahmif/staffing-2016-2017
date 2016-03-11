@@ -106,18 +106,21 @@ $(function() {
     $('input[required], textarea[required]').on('focusout change', function() {
         if (!$(this).val()) {
             $(this).addClass('error');
-            $(this).parent().find('.error-validation').show();
+            $(this).closest('.form-group').find('.error-validation').show();
         } else {
             $(this).removeClass('error');
-            $(this).parent().find('.error-validation').hide();
+            $(this).closest('.form-group').find('.error-validation').hide();
         }
     });
     function validateInput() {
         var firstError = null;
         $('input[required], textarea[required]').each(function(i, e) {
-            if (!$(e).val()) {
+        if ($(e).attr('type') == 'checkbox') {
+            console.log($(e).is(':checked'));
+        }
+            if (!$(e).val() || ($(e).attr('type') == 'checkbox' && !($(e).is(':checked')))) {
                 $(e).addClass('error');
-                $(e).parent().find('.error-validation').show();
+                $(e).closest('.form-group').find('.error-validation').show();
                 if (!firstError) {
                     firstError = $(e);
                 }
