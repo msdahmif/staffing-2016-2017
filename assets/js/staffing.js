@@ -15,16 +15,18 @@ $(function() {
         'MSDA',
         'Akademik',
         'Publikasi',
-        'Kreatif'
+        'Kreatif',
+        'DPP',
+        'Tim Senator'
     ];
     var divisionItemTemplate =
-        '<div class="col-md-3 col-sm-4 col-xs-6 division-item">'
+        '<div class="col-md-4 col-sm-4 col-xs-6 division-item">'
             + '<div class="panel panel-default">'
                 + '<div class="panel-heading"><span></span></div>'
             + '</div>'
         + '</div>';
     var divisionItemPlaceholder =
-        '<div class="col-md-3 col-sm-4 col-xs-6 division-item division-item-placeholder">'
+        '<div class="col-md-4 col-sm-4 col-xs-6 division-item division-item-placeholder">'
             + '<div class="panel panel-default">'
                 + '<div class="panel-heading"><span></span></div>'
             + '</div>'
@@ -187,7 +189,10 @@ $(function() {
             "entry.1594940084",
             "entry.46464716",
             "entry.780219317",
-            "entry.278532221"
+            "entry.278532221",
+            "entry.979206341",
+            "entry.647941047",
+
         ],
         reason: [
             "entry.278632534",
