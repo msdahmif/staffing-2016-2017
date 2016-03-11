@@ -16,7 +16,8 @@ $(function() {
         'Akademik',
         'Publikasi',
         'Kreatif',
-        'Tim Senator'
+        'Tim Senator',
+        'DPP'
     ];
     var divisionItemTemplate =
         '<div class="col-md-4 col-sm-4 col-xs-6 division-item">'
@@ -189,7 +190,8 @@ $(function() {
             "entry.46464716",
             "entry.780219317",
             "entry.278532221",
-            "entry.979206341"
+            "entry.979206341",
+            "entry.647941047"
 
         ],
         reason: [
