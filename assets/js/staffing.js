@@ -191,7 +191,7 @@ $(function() {
             "entry.780219317",
             "entry.278532221",
             "entry.979206341",
-            "entry.647941047",
+            "entry.647941047"
 
         ],
         reason: [
@@ -202,8 +202,6 @@ $(function() {
         shuffled:"entry.489806969"
     };
 
-
-    
 
     $('#real-submit-button').click(function() {
         // generate form link
