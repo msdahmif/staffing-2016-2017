@@ -15,7 +15,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body style="background-color: lightblue;">
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-md-offset-1 col-xs-12">
@@ -31,19 +31,24 @@
             <p>Kenalkan dirimu!</p>
 
             <div class="row">
-                <div class="form-group col-xs-12 col-md-4">
+                <div class="form-group col-xs-9 col-md-4">
                     <label class="" for="nim">NIM Jurusan</label>
                     <input class="form-control" type="text" name="nim" id="nim" required>
                     <small class="error-validation">Field ini harus diisi</small>
                 </div>
-                <div class="form-group col-xs-12 col-md-4">
+                <div class="form-group col-xs-9 col-md-4">
                     <label class="" for="nama">Nama</label>
                     <input class="form-control" type="text" name="nama" id="nama" required>
                     <small class="error-validation">Field ini harus diisi</small>
                 </div>
-                <div class="form-group col-xs-12 col-md-4">
+                <div class="form-group col-xs-9 col-md-4">
                     <label class="" for="telepon">Nomor Telepon</label>
                     <input class="form-control" type="text" name="telepon" id="telepon" required>
+                    <small class="error-validation">Field ini harus diisi</small>
+                </div>
+                <div class="form-group col-xs-9 col-md-4">
+                    <label class="" for="telepon">ID Line</label>
+                    <input class="form-control" type="text" name="idline" id="idline" required>
                     <small class="error-validation">Field ini harus diisi</small>
                 </div>
             </div>
@@ -52,7 +57,7 @@
 
             <h3>Pilihan Divisi</h3>
             <p>Urutkan semua divisi di bawah ini. Nomor 1 adalah divisi yang paling kamu minati. <em>Drag and drop</em> ke posisi yang kamu inginkan!</p>
-            <p>Bingung? Pastikan kamu sudah membaca <a target="_blank" href="#">booklet divisi</a> sebelum menentukan pilihan.</p>
+            <p>Bingung? Pastikan kamu sudah membaca <a target="_blank" href="http://beat.inkubatorit.com/draft">Draft Muker</a> sebelum menentukan pilihan.</p>
 
             <div class="container-fluid">
                 <div class="sortable sortable-well division-pool">
@@ -82,7 +87,11 @@
             </div>
 
             <hr>
-
+            <div class="checkbox">
+                <label>
+                    <input name="confirmation" id="confirmation" type="checkbox" required> Dengan mengisi formulir ini, saya dengan sadar memiliki kewajiban dan tanggung jawab untuk melakukan program kerja yang ada pada divisi dimana saya ditempatkan dan bersedia menerima konsekuensi jika saya tidak melakukan kewajiban dan tanggung jawab saya
+                </label>
+            </div>
             <div class="form-group">
                 <button class="btn btn-default submit-button">Kirim!</button>
             </div>
@@ -93,7 +102,7 @@
                     <div class="modal-content">
                         <div class="modal-body">
                             <h4 class="modal-title">Apakah kamu yakin data yang dimasukkan sudah benar?</h4>
-                            <h5><strong>NIM / Nama / Telepon:</strong></h5>
+                            <h5><strong>NIM / Nama / Telepon / ID LINE:</strong></h5>
                             <div class="well" id="nim-nama-review"></div>
 
                             <h5><strong>Pilihan divisi:</strong></h5>
