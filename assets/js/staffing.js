@@ -133,7 +133,7 @@ $(function() {
 
     function fillModal() {
         // nim-nama-telepon
-        $('#nim-nama-review').html($('#nim').val() + " / " + $('#nama').val() + " / " + $('#telepon').val());
+        $('#nim-nama-review').html($('#nim').val() + " / " + $('#nama').val() + " / " + $('#telepon').val() + " / " +$('#idline').val());
         // division order
         var order = $('#division-review');
         order.html('<ol></ol>');
@@ -167,6 +167,7 @@ $(function() {
         nim:    "entry.2025209625",
         nama:   "entry.1022360252",
         telepon:"entry.1387741161",
+        idline: "entry.1909003065",
         division: [
             "entry.806464474",
             "entry.1248643119",
