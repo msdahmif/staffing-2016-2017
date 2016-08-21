@@ -46,7 +46,7 @@ $(function() {
     }
 
     initializePool();
-    
+
     function shuffle(){
         for(i = 1;i <= 100; ++i){
             var x = Math.floor(Math.random() * i) % division.length;
@@ -84,7 +84,7 @@ $(function() {
         });
     }
     reorderDivisionItem();
-    
+
     $('.division-pool').sortable({
         cursor: 'move',
         items: '.division-item',
@@ -217,7 +217,7 @@ $(function() {
         form.append('<input type="text" name="' + formEntries.nama + '" value="' + $('#nama').val() + '">');
         form.append('<input type="text" name="' + formEntries.telepon + '" value="' + $('#telepon').val() + '">');
         form.append('<input type="text" name="' + formEntries.idline + '" value="' + $('#idline').val() + '">');
-        
+
         // division orders
         $('.division-item').each(function(i, e) {
             form.append('<input type="text" name="' + formEntries.division[i] + '" value="' + $(e).data('division') + '">');
