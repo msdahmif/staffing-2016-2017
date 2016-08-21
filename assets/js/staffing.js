@@ -190,15 +190,15 @@ $(function() {
             "entry.1484587408",
             "entry.354642495",
             "entry.2045009708",
-            "entry.417857757",
-            "entry.358902149"
+            "entry.124631733",
+            "entry.1088765625"
         ],
         reason: [
             "entry.1575940720",
             "entry.1117517217",
             "entry.1608496440"
         ],
-        shuffled:"entry.1101736961"
+        shuffled:"entry.1580498851"
     };
 
 
