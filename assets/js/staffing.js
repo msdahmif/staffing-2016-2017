@@ -165,41 +165,38 @@ $(function() {
     //////////////////////
 
     // google form key
-    var formKey = "1qTyTNmkYH7jl89QPBntbifgmG8-E7AWZjzsMzm7RGjM";
+    var formKey = "1-pndV7gWHUg9QsvQyXdzpw63DJxd_UkJp-FNwpIuCNU";
 
     // google form entry key
     var formEntries = {
-        nim:    "entry.2025209625",
-        nama:   "entry.1022360252",
-        telepon:"entry.1387741161",
-        idline: "entry.1909003065",
+        nim:    "entry.1719197950",
+        nama:   "entry.1270260493",
+        telepon:"entry.265761041",
+        idline: "entry.919817710",
         division: [
-            "entry.806464474",
-            "entry.1248643119",
-            "entry.560973193",
-            "entry.914959542",
-            "entry.1844253789",
-            "entry.1320463128",
-            "entry.1926496184",
-            "entry.1461528561",
-            "entry.659224251",
-            "entry.726232680",
-            "entry.1700182841",
-            "entry.945529493",
-            "entry.1594940084",
-            "entry.46464716",
-            "entry.780219317",
-            "entry.278532221",
-            "entry.979206341",
-            "entry.647941047"
-
+            "entry.1913572718",
+            "entry.2061202386",
+            "entry.1624881999",
+            "entry.1350220173",
+            "entry.277885585",
+            "entry.933546810",
+            "entry.1521225000",
+            "entry.201225294",
+            "entry.257564708",
+            "entry.65830304",
+            "entry.1198737195",
+            "entry.1170044625",
+            "entry.1050247186",
+            "entry.1484587408",
+            "entry.354642495",
+            "entry.2045009708"
         ],
         reason: [
-            "entry.278632534",
-            "entry.661248390",
-            "entry.697588095"
+            "entry.1575940720",
+            "entry.1117517217",
+            "entry.1608496440"
         ],
-        shuffled:"entry.489806969"
+        shuffled:"entry.1101736961"
     };
 
 
@@ -212,7 +209,7 @@ $(function() {
         form.attr('action', url);
         form.html('');
 
-        // nim and nama and telepon
+        // nim and nama and telepon, dan id line
         form.append('<input type="text" name="' + formEntries.nim + '" value="' + $('#nim').val() + '">');
         form.append('<input type="text" name="' + formEntries.nama + '" value="' + $('#nama').val() + '">');
         form.append('<input type="text" name="' + formEntries.telepon + '" value="' + $('#telepon').val() + '">');
