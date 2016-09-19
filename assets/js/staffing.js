@@ -13,7 +13,7 @@ $(function() {
         'PMB',
         'Kaderisasi',
         'MSDA',
-        'Akademik',
+        'Aksara',
         'Publikasi',
         'Kreatif',
         'Tim Senator',
@@ -165,40 +165,40 @@ $(function() {
     //////////////////////
 
     // google form key
-    var formKey = "1-pndV7gWHUg9QsvQyXdzpw63DJxd_UkJp-FNwpIuCNU";
+    var formKey = "19WprLGan2FLLVKO0mAefp-UeMkaLAhT1o_9RO2nJ77c";
 
     // google form entry key
     var formEntries = {
-        nim:    "entry.1719197950",
-        nama:   "entry.1270260493",
-        telepon:"entry.265761041",
-        idline: "entry.919817710",
+        nim:    "entry.2063442992",
+        nama:   "entry.1848733427",
+        telepon:"entry.1470831869",
+        idline: "entry.425316370",
         division: [
-            "entry.1913572718",
-            "entry.2061202386",
-            "entry.1624881999",
-            "entry.1350220173",
-            "entry.277885585",
-            "entry.933546810",
-            "entry.1521225000",
-            "entry.201225294",
-            "entry.257564708",
-            "entry.65830304",
-            "entry.1198737195",
-            "entry.1170044625",
-            "entry.1050247186",
-            "entry.1484587408",
-            "entry.354642495",
-            "entry.2045009708",
-            "entry.124631733",
-            "entry.1088765625"
+            "entry.596617159",
+            "entry.62042229",
+            "entry.1441340053",
+            "entry.1129921305",
+            "entry.872893610",
+            "entry.1262779824",
+            "entry.1412570275",
+            "entry.903272487",
+            "entry.1564710036",
+            "entry.1227912660",
+            "entry.900357137",
+            "entry.1407781877",
+            "entry.661446955",
+            "entry.302490985",
+            "entry.1282161244",
+            "entry.858560788",
+            "entry.2135354439",
+            "entry.2008464766"
         ],
         reason: [
-            "entry.1575940720",
-            "entry.1117517217",
-            "entry.1608496440"
+            "entry.728069255",
+            "entry.1781261282",
+            "entry.461541537"
         ],
-        shuffled:"entry.1580498851"
+        shuffled:"entry.58904645"
     };
 
 
