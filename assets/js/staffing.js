@@ -14,7 +14,7 @@ $(function() {
         'Pengmas',
         'MSDA',
         'Aksara',
-        'Publikasi',
+        'Kaderisasi',
         'Kekeluargaan',
         'Tim Senator',
         'DPP'
