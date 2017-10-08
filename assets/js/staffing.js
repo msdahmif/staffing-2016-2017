@@ -16,8 +16,7 @@ $(function() {
         'Aksara',
         'Kaderisasi',
         'Kekeluargaan',
-        'Tim Senator',
-        'DPP'
+        'Tim Senator'
     ];
     var divisionItemTemplate =
         '<div class="col-md-4 col-sm-4 col-xs-6 division-item">'
@@ -171,7 +170,6 @@ $(function() {
     var formEntries = {
         nim:    "entry.1719197950",
         nama:   "entry.1270260493",
-        telepon:"entry.265761041",
         idline: "entry.919817710",
         division: [
             "entry.1913572718",
@@ -190,8 +188,7 @@ $(function() {
             "entry.1484587408",
             "entry.354642495",
             "entry.2045009708",
-            "entry.124631733",
-            "entry.1088765625"
+            "entry.124631733"
         ],
         reason: [
             "entry.1575940720",
