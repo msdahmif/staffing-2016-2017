@@ -6,7 +6,6 @@ $(function() {
         'Marketing',
         'Manajemen Proyek',
         'Pengembangan Karya',
-        'Komunitas',
         'Publikasi Eksternal',
         'Publikasi Internal',
         'Intrakampus',
