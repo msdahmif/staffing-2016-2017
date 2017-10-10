@@ -135,8 +135,8 @@ $(function() {
     }
 
     function fillModal() {
-        // nim-nama-telepon
-        $('#nim-nama-review').html($('#nim').val() + " / " + $('#nama').val() + " / " + $('#telepon').val() + " / " +$('#idline').val());
+        // nim-nama-review
+        $('#nim-nama-review').html($('#nim').val() + " / " + $('#nama').val() + " / " +$('#idline').val());
         // division order
         var order = $('#division-review');
         order.html('<ol></ol>');
@@ -206,10 +206,9 @@ $(function() {
         form.attr('action', url);
         form.html('');
 
-        // nim and nama and telepon, dan id line
+        // nim dan nama dan id line
         form.append('<input type="text" name="' + formEntries.nim + '" value="' + $('#nim').val() + '">');
         form.append('<input type="text" name="' + formEntries.nama + '" value="' + $('#nama').val() + '">');
-        form.append('<input type="text" name="' + formEntries.telepon + '" value="' + $('#telepon').val() + '">');
         form.append('<input type="text" name="' + formEntries.idline + '" value="' + $('#idline').val() + '">');
 
         // division orders
